@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Resala.Apps.Domain.Properties
+namespace Resala.Apps.VolCRM.Properties
 {
 
 

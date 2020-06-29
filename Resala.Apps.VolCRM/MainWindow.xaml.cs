@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Resala.Apps.Domain
+namespace Resala.Apps.VolCRM
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1145
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resala.Apps.Core", "Resala.Apps.Core\Resala.Apps.Core.csproj", "{D3B2B316-02D8-4886-BE19-69B9452264EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resala.Apps.Core", "Resala.Apps.Core\Resala.Apps.Core.csproj", "{D3B2B316-02D8-4886-BE19-69B9452264EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resala.Apps.APIs", "Resala.Apps.APIs\Resala.Apps.APIs.csproj", "{DDB3EB06-BBAB-4A9D-975B-660818F560E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resala.Apps.APIs", "Resala.Apps.APIs\Resala.Apps.APIs.csproj", "{DDB3EB06-BBAB-4A9D-975B-660818F560E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resala.Apps.VolCRM", "Resala.Apps.WPF\Resala.Apps.VolCRM.csproj", "{EBEFF913-FF14-4FEC-BB80-6AC698A7194A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resala.Apps.VolCRM", "Resala.Apps.VolCRM\Resala.Apps.VolCRM.csproj", "{6FC9A918-65EE-44BE-93C9-0BBEBC088466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resala.Apps.Models", "Resala.Apps.Models\Resala.Apps.Models.csproj", "{31D4C98C-7030-4B0C-8114-B07EFB2F5091}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +25,14 @@ Global
 		{DDB3EB06-BBAB-4A9D-975B-660818F560E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDB3EB06-BBAB-4A9D-975B-660818F560E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDB3EB06-BBAB-4A9D-975B-660818F560E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EBEFF913-FF14-4FEC-BB80-6AC698A7194A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EBEFF913-FF14-4FEC-BB80-6AC698A7194A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EBEFF913-FF14-4FEC-BB80-6AC698A7194A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EBEFF913-FF14-4FEC-BB80-6AC698A7194A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC9A918-65EE-44BE-93C9-0BBEBC088466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC9A918-65EE-44BE-93C9-0BBEBC088466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC9A918-65EE-44BE-93C9-0BBEBC088466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC9A918-65EE-44BE-93C9-0BBEBC088466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31D4C98C-7030-4B0C-8114-B07EFB2F5091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D4C98C-7030-4B0C-8114-B07EFB2F5091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D4C98C-7030-4B0C-8114-B07EFB2F5091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D4C98C-7030-4B0C-8114-B07EFB2F5091}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
