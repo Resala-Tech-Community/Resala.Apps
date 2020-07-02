@@ -86,5 +86,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Resala.Apps.Core\Resala.Apps.Core.csproj">
+      <Project>{94900b3a-089a-481e-96af-ea44489202bb}</Project>
+      <Name>Resala.Apps.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

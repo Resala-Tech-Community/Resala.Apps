@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Resala.Apps.Domain.CommonModels
 {
-    class CellularNetwork : BaseObject
+    class CellularNetwork : ObservableObject
     {
         public String Name { get; set; }
     }

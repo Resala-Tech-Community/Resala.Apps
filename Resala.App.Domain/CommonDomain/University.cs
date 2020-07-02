@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Resala.Apps.Domain.CommonModels
 {
-    class VolunteerType : BaseObject
+    class University : ObservableObject
     {
+        public string Name { get; set; }
     }
 }

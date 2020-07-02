@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Resala.Apps.Models.CommonModels
+namespace Resala.Apps.Domain.CommonModels
 {
-    class University : BaseObject
+    class Region : ObservableObject
     {
         public string Name { get; set; }
     }

@@ -9,7 +9,7 @@ namespace Resala.Apps.Domain.CommonModels
     public enum UserPrivilege { ADMIN, EDITOR }
     public enum Gender { MALE, FEMALE }
 
-    class Volunteer : BaseObject
+    class Volunteer : ObservableObject
     {
         public DateTime BirthDate { get; set; }
         public DateTime JoinDate { get; set; }

@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
-using System.ComponentModel.DataAnnotations;
 
-namespace Resala.Apps.Models
+namespace Resala.Apps.Domain
 {
-    public class BaseObject : INotifyPropertyChanged
+    public class ObservableObject : INotifyPropertyChanged
     {
         public int ID { get; set; }
 

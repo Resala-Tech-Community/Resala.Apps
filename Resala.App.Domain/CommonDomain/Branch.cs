@@ -4,9 +4,10 @@ using System.Text;
 
 namespace Resala.Apps.Domain.CommonModels
 {
-    class College : BaseObject
+    class Branch : ObservableObject
     {
         public string Name { get; set; }
-        public University University { get; set; }
+        public string Address { get; set; }
+        public string WhatsappNumber { get; set; }
     }
 }

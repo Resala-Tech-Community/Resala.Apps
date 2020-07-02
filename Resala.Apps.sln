@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1145
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resala.Apps.Core", "Resala.Apps.Core\Resala.Apps.Core.csproj", "{D3B2B316-02D8-4886-BE19-69B9452264EE}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resala.Apps.APIs", "Resala.Apps.APIs\Resala.Apps.APIs.csproj", "{DDB3EB06-BBAB-4A9D-975B-660818F560E0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resala.Apps.VolCRM", "Resala.Apps.VolCRM\Resala.Apps.VolCRM.csproj", "{6FC9A918-65EE-44BE-93C9-0BBEBC088466}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resala.Apps.Domain", "Resala.Apps.Domain\Resala.Apps.Domain.csproj", "{E13B134A-BF47-4C7E-BC0A-50A84956417B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resala.App.Domain", "Resala.App.Domain\Resala.App.Domain.csproj", "{E696394F-3C0F-4725-AA04-C4F7D8EF9097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resala.App.APIs", "Resala.App.APIs\Resala.App.APIs.csproj", "{590D76CE-E4D9-4D7A-AA7D-8279D38789C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resala.Apps.Core", "Resala.Apps.Core\Resala.Apps.Core.csproj", "{94900B3A-089A-481E-96AF-EA44489202BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,22 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D3B2B316-02D8-4886-BE19-69B9452264EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3B2B316-02D8-4886-BE19-69B9452264EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3B2B316-02D8-4886-BE19-69B9452264EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3B2B316-02D8-4886-BE19-69B9452264EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DDB3EB06-BBAB-4A9D-975B-660818F560E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DDB3EB06-BBAB-4A9D-975B-660818F560E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DDB3EB06-BBAB-4A9D-975B-660818F560E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DDB3EB06-BBAB-4A9D-975B-660818F560E0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6FC9A918-65EE-44BE-93C9-0BBEBC088466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6FC9A918-65EE-44BE-93C9-0BBEBC088466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FC9A918-65EE-44BE-93C9-0BBEBC088466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FC9A918-65EE-44BE-93C9-0BBEBC088466}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E13B134A-BF47-4C7E-BC0A-50A84956417B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E13B134A-BF47-4C7E-BC0A-50A84956417B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E13B134A-BF47-4C7E-BC0A-50A84956417B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E13B134A-BF47-4C7E-BC0A-50A84956417B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E696394F-3C0F-4725-AA04-C4F7D8EF9097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E696394F-3C0F-4725-AA04-C4F7D8EF9097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E696394F-3C0F-4725-AA04-C4F7D8EF9097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E696394F-3C0F-4725-AA04-C4F7D8EF9097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{590D76CE-E4D9-4D7A-AA7D-8279D38789C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{590D76CE-E4D9-4D7A-AA7D-8279D38789C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{590D76CE-E4D9-4D7A-AA7D-8279D38789C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{590D76CE-E4D9-4D7A-AA7D-8279D38789C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94900B3A-089A-481E-96AF-EA44489202BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94900B3A-089A-481E-96AF-EA44489202BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94900B3A-089A-481E-96AF-EA44489202BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94900B3A-089A-481E-96AF-EA44489202BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
