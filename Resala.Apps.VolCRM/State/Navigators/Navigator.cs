@@ -2,17 +2,26 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
-using Resala.Apps.Core.Commands;
-using Resala.Apps.Core.ViewModels;
+using Resala.Apps.VolCRM.Commands;
+using Resala.Apps.VolCRM.ViewModels;
 using Resala.Apps.Domain;
+using System.Threading;
+using System.Collections.ObjectModel;
+using Resala.App.Domain.CommonDomain;
 
-namespace Resala.Apps.Core.State.Navigators
+namespace Resala.Apps.VolCRM.State.Navigators
 {
     /// <summary>
     /// Singletone Navigator
     /// </summary>
-    class Navigator : ObservableObject ,INavigator
+    public class Navigator : ObservableObject ,INavigator
     {
+
+        public ObservableCollection<Screen> Screens { get; set; }
+        public ICommand NavigateCommand { get; }
+
+
+
         private static Navigator instance = null;
         private static object padLock = new object();
         public static Navigator Instance
@@ -32,10 +41,7 @@ namespace Resala.Apps.Core.State.Navigators
             }
         }
 
-        private Navigator()
-        {
-            NavigateCommand = new NavigateCommand();
-        }
+
         private ViewModelBase currentViewModel;
         public ViewModelBase CurrentViewModel
         {
@@ -44,10 +50,33 @@ namespace Resala.Apps.Core.State.Navigators
             {
                 currentViewModel = value;
                 OnPropertyChanged(nameof(CurrentViewModel));
-            }          
+            }
+        }
+
+
+        private Navigator()
+        {
+            NavigateCommand = new RelayCommand(NavigationCommandExecute);
         }
 
         
-        public ICommand NavigateCommand  { get ; set; }
+
+
+        public void NavigationCommandExecute(object parameter)
+        {
+            switch (parameter as ViewScreen?)
+            {
+                case ViewScreen.PROFILE:
+                    CurrentViewModel = new ProfileViewModel();
+                    break;
+                case ViewScreen.EVENTS:
+                    CurrentViewModel = new EventsViewModel();
+                    break;
+                case ViewScreen.CALLS:
+                    CurrentViewModel = new CallsViewModel();
+                    break;
+            }
+        }
+
     }
 }

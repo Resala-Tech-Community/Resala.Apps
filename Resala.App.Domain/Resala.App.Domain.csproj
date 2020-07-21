@@ -45,6 +45,7 @@
     <Compile Include="CommonDomain\CellularNetwork.cs" />
     <Compile Include="CommonDomain\College.cs" />
     <Compile Include="CommonDomain\Region.cs" />
+    <Compile Include="CommonDomain\Screen.cs" />
     <Compile Include="CommonDomain\Specialization.cs" />
     <Compile Include="CommonDomain\University.cs" />
     <Compile Include="CommonDomain\Volunteer.cs" />

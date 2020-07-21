@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6FC9A918-65EE-44BE-93C9-0BBEBC088466}</ProjectGuid>
+    <ProjectGuid>{1F7D1D07-0A05-434F-BF98-35A7496136BF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Resala.Apps.VolCRM</RootNamespace>
     <AssemblyName>Resala.Apps.VolCRM</AssemblyName>
@@ -34,6 +34,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\resalaLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Resala.Apps.VolCRM.App</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -55,10 +61,66 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Controls\NavigationDrawer.xaml.cs">
+      <DependentUpon>NavigationDrawer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="State\Navigators\INavigator.cs" />
+    <Compile Include="State\Navigators\Navigator.cs" />
+    <Compile Include="ViewModels\CallsViewModel.cs" />
+    <Compile Include="ViewModels\EventsViewModel.cs" />
+    <Compile Include="MainViewModel.cs" />
+    <Compile Include="ViewModels\ProfileViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Views\CallsView.xaml.cs">
+      <DependentUpon>CallsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EventsView.xaml.cs">
+      <DependentUpon>EventsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfileView.xaml.cs">
+      <DependentUpon>ProfileView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Converters\percentageConverter.cs" />
+    <Page Include="Controls\NavigationDrawer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Common.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\NavigatorStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ScreensView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CallsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\EventsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProfileView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -87,10 +149,26 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Resala.Apps.Core\Resala.Apps.Core.csproj">
-      <Project>{94900b3a-089a-481e-96af-ea44489202bb}</Project>
-      <Name>Resala.Apps.Core</Name>
+    <Resource Include="Resources\emptyProfileImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Resala.App.APIs\Resala.App.APIs.csproj">
+      <Project>{590d76ce-e4d9-4d7a-aa7d-8279d38789c2}</Project>
+      <Name>Resala.App.APIs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Resala.App.Domain\Resala.App.Domain.csproj">
+      <Project>{e696394f-3c0f-4725-aa04-c4f7d8ef9097}</Project>
+      <Name>Resala.App.Domain</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\resalaLogo.png" />
+    <Resource Include="Resources\resalaQDImageLogo.png" />
+    <Resource Include="Resources\resalaQDLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\resalaLogo.ico" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
